@@ -1,0 +1,116 @@
+/******************************************************************
+Site Name: 
+Author: 
+
+Stylesheet: Desktop Stylsheet
+
+This is the desktop size. It's larger than an iPad so it will only
+be seen on the Desktop. 
+
+******************************************************************/
+
+
+/*********************
+HEADER STYLES
+*********************/
+
+
+.header {
+	background: $blue;
+}
+
+	#logo {
+		float: left;
+		margin: 2.45em 0 2.35em;
+		padding-left: 1em;
+		text-align: left;
+		width: 25%;
+
+		a {
+			color: $white;
+			font: 90% $sans-serif;
+			font-weight: 500;
+			letter-spacing: .15em;
+			padding-top: 0;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+	}
+
+.hire-btn {
+	display: block;
+	float: left;
+	padding-right: 1em;
+	text-align: right;
+	width: 25%;
+
+	a {
+		@include button;
+		margin-top: 1.15em;
+		padding: 0.5em 0.8em;
+		@include transition(all 0.2s linear);
+
+		&:hover {
+			background-color: $white;
+			color: $pink;
+			padding: 0.5em 1.2em;
+			
+
+		}
+	}
+}
+
+
+/*********************
+NAVIGATION STYLES
+*********************/
+
+#menu-toggle {
+	display: none;
+}
+
+nav {
+	display: inline-block;
+	float: left;
+	text-align: center;
+	width: 50%;
+	@include auto-margin;
+}
+
+ul.nav {
+	border-top: 0px;
+	display: block;
+	margin-top: 2.45em;
+
+	li {
+		display: inline-block;
+		margin: 0 0.7em;
+		width: auto;
+
+		a {
+			border-bottom: 4px solid;
+			border-color: transparent;
+			color: $white;
+			display: block;
+			font: 90% $sans-serif;
+			font-weight: 500;
+			letter-spacing: .15em;
+			padding: 0;
+			text-decoration: none;
+			text-transform: uppercase;
+			width: auto;
+
+			/*
+			remember this is for mobile ONLY, so there's no need
+			to even declare hover styles here, you can do it in
+			the style.scss file where it's relevant. We want to
+			keep this file as small as possible!
+			*/
+			&:hover, &:focus {
+				border-bottom: 4px solid;
+				border-color: $yellow;
+				@include transition(border-color 0.2s linear);
+			}
+		}
+	}
+}

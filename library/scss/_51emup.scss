@@ -9,19 +9,39 @@ be seen on the Desktop.
 
 ******************************************************************/
 
+/******************************************************************
+H1, H2, H3, H4, H5 STYLES
+******************************************************************/
+
+h1, .h1 {
+	font-size: 4.1em;
+}
+
 
 /*********************
 HEADER STYLES
 *********************/
 
 
-.header {
+header {
 	background: $blue;
+
+	h1 {
+		font-size: 4.1em;
+		letter-spacing: 0.025em;
+
+		&:first-letter {
+			margin: 0 -0.26em;
+			padding: 0.1em 0.26em 0;
+			@include sprite-bg('blueeye', 0, 0, false);
+		}
+	}
 }
+
 
 	#logo {
 		float: left;
-		margin: 2.45em 0 2.35em;
+		margin: 2.45em 0 1.65em;
 		padding-left: 1em;
 		text-align: left;
 		width: 25%;
@@ -113,4 +133,13 @@ ul.nav {
 			}
 		}
 	}
+}
+
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+
+
+.header-image {
+        margin-top: 0em;
 }

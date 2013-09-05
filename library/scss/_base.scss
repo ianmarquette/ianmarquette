@@ -94,6 +94,7 @@ LAYOUT & GRID STYLES
 .green-section,
 .yellow-section,
 .dark-grey-section {
+	float: left;
 	width: 100%;
 }
 
@@ -145,8 +146,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 }
 
 h1, .h1 {
-	font-size: 2.5em;
-	line-height: 1.333em;
+	font-size: 1.6em;
+	letter-spacing: 0.05em;
+	line-height: 1.5em;
+	text-transform: uppercase;
 }
 
 h2, .h2 {
@@ -175,8 +178,16 @@ h5, .h5 {
 HEADER STYLES
 *********************/
 
-.header {
+header {
 	background: $blue;
+
+	h1 {
+		width: 95%;
+		@include auto-margin;
+		margin-top: 0.95em;
+	}
+
+
 }
 
 	#logo {
@@ -263,7 +274,7 @@ ul.nav {
 			keep this file as small as possible!
 			*/
 			&:hover, &:focus {
-
+				color: $white;
 			}
 		}
 
@@ -282,14 +293,14 @@ ul.nav {
 
 ul.open {
 	background-color: $blue;
-display: block;
-margin: 0;
-padding: 0;
-//position: absolute;
+	display: block;
+	margin: 0;
+	padding: 0;
+	//position: absolute;
 
-position: relative;
-width: 100%;
-z-index: 500;
+	position: relative;
+	width: 100%;
+	z-index: 500;
 }
 
 
@@ -298,7 +309,24 @@ POSTS & CONTENT STYLES
 *********************/
 
 #content {
-	margin-top: 2.2em;
+
+}
+
+header {
+		text-align: center;
+		@include auto-margin;
+
+	}
+
+.header-image {
+	background: url(../images/ian-marquette-photo.jpg);
+	-webkit-border-radius: 50%;
+    border-radius: 50%;
+    height: 8em;
+    margin-top: 1.6em;
+    text-align: center;
+    width: 8em;
+    @include auto-margin;
 }
 
 		.hentry {

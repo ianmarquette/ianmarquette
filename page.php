@@ -2,20 +2,25 @@
 
 			<div id="content">
 
-				<div id="inner-content" class="clearfix">
-
 						<div id="main" class="clearfix" role="main">
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
-								<header class="blue-section sixcol first">
+								<section class="blue-section">
 
-									<h1 itemprop="headline"><?php the_title(); ?></h1>
+									<header class="wrap sixcol">
 
+										<div class="header-image"></div>
 
-								</header> <!-- end article header -->
+										<!-- <img src="<?php echo get_template_directory_uri(); ?>/library/images/ian-marquette-photo.jpg" alt="ian marquette" class="header-image" /> -->
+
+										<h1 itemprop="headline"><?php the_field('main_header'); ?></h1>
+
+									</header> <!-- end article header -->
+
+								</section>
 
 								<section class="entry-content clearfix" itemprop="articleBody">
 
@@ -41,8 +46,6 @@
 							<?php endif; ?>
 
 						</div> <!-- end #main -->
-
-				</div> <!-- end #inner-content -->
 
 			</div> <!-- end #content -->
 

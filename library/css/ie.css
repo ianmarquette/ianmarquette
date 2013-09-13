@@ -252,6 +252,24 @@ LAYOUT & GRID STYLES
   max-width: 1000px; }
 
 /*********************
+HEADER STYLES
+*********************/
+header h2.bottom-element {
+  margin-bottom: 10.75em; }
+
+.scroll-down {
+  display: block;
+  height: 1.6em;
+  margin: 13.2em auto 2.4em;
+  width: 1.6em;
+  background-image: url("../images/ian-marquette-sprite.png");
+  background-position-x: 0px;
+  background-position-y: -800px;
+  background-repeat: no-repeat; }
+  .svg .scroll-down {
+    background-image: url("../images/ian-marquette-sprite.svg"); }
+
+/*********************
 SIDEBARS & ASIDES
 *********************/
 .sidebar {
@@ -314,9 +332,17 @@ H1, H2, H3, H4, H5 STYLES
 h1, .h1 {
   font-size: 4.1em; }
 
+h3, .h3 {
+  font-size: 1.6em;
+  margin: 1.1em auto; }
+
 /*********************
 HEADER STYLES
 *********************/
+#inner-header {
+  background: #0e7ac4;
+  height: 6.4em; }
+
 header {
   background: #0e7ac4; }
   header h1 {
@@ -376,6 +402,32 @@ header {
       background-color: white;
       color: #f27398;
       padding: 0.5em 1.2em; }
+
+#inner-header.persistent-header {
+  height: 6.35em; }
+  #inner-header.persistent-header #logo {
+    float: left;
+    margin: 2.45em 0 2.15em;
+    padding-left: 1em;
+    text-align: left;
+    width: 25%; }
+    #inner-header.persistent-header #logo a {
+      background-color: transparent;
+      background-image: none !important;
+      -webkit-border-radius: 0%;
+      border-radius: 0%;
+      color: #363947;
+      font: 90% "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      letter-spacing: .15em;
+      margin: 0;
+      overflow: normal;
+      padding-top: 0;
+      text-decoration: none;
+      text-indent: 0;
+      text-transform: uppercase;
+      white-space: normal;
+      width: auto; }
 
 /*********************
 NAVIGATION STYLES

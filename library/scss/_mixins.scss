@@ -44,6 +44,12 @@ TOOLS
 	overflow: hidden;
 }
 
+@mixin image-replacement {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
 
 /*********************
 COLORS
@@ -257,7 +263,7 @@ CENTRE ALIGN BOX ELEMENTS
 SPRITES
 *********************/
 
-$sprite: blueeye, greeneye, yelloweye, pinkeye, arrow;
+$sprite: blueeye, greeneye, yelloweye, pinkeye, arrow, blueeyesmall;
 $spritegrid: 200;
 
 @mixin sprite-bg($crop, $x:0, $y:$x, $hover:true) { 

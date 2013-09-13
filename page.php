@@ -14,13 +14,31 @@
 
 										<div class="header-image"></div>
 
-										<!-- <img src="<?php echo get_template_directory_uri(); ?>/library/images/ian-marquette-photo.jpg" alt="ian marquette" class="header-image" /> -->
-
 										<h1 itemprop="headline"><?php the_field('main_header'); ?></h1>
+
+										<h2><?php the_field('sub-heading'); ?></h2>
+
+										<a href="#" class="scroll-down"></a>
 
 									</header> <!-- end article header -->
 
 								</section>
+
+								<section class="dark-grey-section">
+
+									<div class="wrap sixcol">
+										<h3>Recent Projects</h3>
+									</div>	
+
+								</section>
+
+								<section class="green-section">
+
+									<div class="wrap sixcol">
+										<p>sdfsfsdfsdfddddddddddd</p>
+									</div>	
+
+								</section>		
 
 								<section class="entry-content clearfix" itemprop="articleBody">
 

@@ -27,6 +27,27 @@ LAYOUT & GRID STYLES
 	max-width: 1000px;
 }
 
+/*********************
+HEADER STYLES
+*********************/
+
+header {
+
+	h2.bottom-element {
+		margin-bottom: 10.75em;
+	}
+}
+
+.scroll-down {
+	display: block;
+	height: 1.6em;
+	margin: 13.2em auto 2.4em;
+	width: 1.6em;
+	@include sprite-bg('arrow', 0, 0, false);
+}
+
+
+
 
 /*********************
 SIDEBARS & ASIDES

@@ -153,13 +153,17 @@ h1, .h1 {
 }
 
 h2, .h2 {
-	font-size: 1.75em;
+	font-size: 1.6em;
 	line-height: 1.4em;
 	margin-bottom: 0.375em;
 }
 
 h3, .h3 {
-	font-size: 1.125em;
+	font-size: 1em;
+	font-weight: 500;
+	margin: 1em auto;
+	text-align: center;
+	text-transform: uppercase;		
 }
 
 h4, .h4 {
@@ -178,16 +182,43 @@ h5, .h5 {
 HEADER STYLES
 *********************/
 
+#inner-header {
+	background: $blue;
+	height: 3.15em;
+	position: static;
+	width: 100%;
+}
+
+.header {
+	position: fixed;
+	z-index: 100;
+}
+
 header {
 	background: $blue;
+	width: 100%;
 
 	h1 {
+		line-height: 1.25em;
 		width: 95%;
 		@include auto-margin;
 		margin-top: 0.95em;
 	}
 
+	h2 {
+		font-weight: 300;
+		padding-bottom: 1.15em;
+		width: 95%;
+		@include auto-margin;
+		margin-top: 1em;
+	}
 
+
+}
+
+.scroll-down {
+	display: none;
+	
 }
 
 	#logo {
@@ -209,6 +240,30 @@ header {
 .hire-btn {
 	display: none;
 }	
+
+#inner-header.persistent-header {
+
+	background: $white;
+	height: 3.15em;
+	width: 100%;
+
+	#logo { 
+		margin: 0 auto 0 4em;
+
+		a {
+		-webkit-border-radius: 50%;
+    	border-radius: 50%;
+    	height: 1.9em;
+    	margin: 0.7em 0 0.9em;
+    	padding: 0;
+    	width: 1.9em;
+		@include sprite-bg('blueeyesmall', 0, 0, false);
+		background-position-y: -991px;
+		background-color: $dark-grey;		
+		@include image-replacement;
+		}
+	}
+}
 
 /*********************
 NAVIGATION STYLES
@@ -238,6 +293,7 @@ and more scalable.
 
 nav {
 	float: left;
+	overflow: hidden;
 	text-align: center;
 	width: 100%;
 	@include auto-margin;
@@ -248,8 +304,10 @@ nav {
 }
 
 ul.nav {
-	border-top: $dark-grey solid 1px;
-	margin-top: 2.45em;
+	background-color: $dark-grey;
+	display: none;
+	margin: 0;
+	padding: 0;
 	width: 100%;
 
 	li {
@@ -292,15 +350,26 @@ ul.nav {
 } /* end .nav */
 
 ul.open {
-	background-color: $blue;
+	background-color: $dark-grey;
 	display: block;
 	margin: 0;
 	padding: 0;
-	//position: absolute;
-
-	position: relative;
 	width: 100%;
-	z-index: 500;
+}
+
+#inner-header.persistent-header  {
+	.icon-bar {
+		background: $pink;
+	}
+
+	ul.nav {
+		border-top: 0px;
+	}
+
+	ul.open {
+		position: relative;
+		width: 100%;
+	}
 }
 
 
@@ -323,10 +392,9 @@ header {
 	-webkit-border-radius: 50%;
     border-radius: 50%;
     height: 8em;
-    margin-top: 1.6em;
+    margin: 4.75em auto 0;
     text-align: center;
     width: 8em;
-    @include auto-margin;
 }
 
 		.hentry {

@@ -9,7 +9,7 @@ the separate media queries. The base mobile goes outside any query
 and is called at the beginning, after that we call the rest
 of the styles inside media queries.
 ******************************************************************/
-/* normalize.css 2012-07-07T09:50 UTC - http://github.com/necolas/normalize.css */
+/*! normalize.css 2012-07-07T09:50 UTC - http://github.com/necolas/normalize.css */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -758,12 +758,16 @@ h1, .h1 {
   text-transform: uppercase; }
 
 h2, .h2 {
-  font-size: 1.75em;
+  font-size: 1.6em;
   line-height: 1.4em;
   margin-bottom: 0.375em; }
 
 h3, .h3 {
-  font-size: 1.125em; }
+  font-size: 1em;
+  font-weight: 500;
+  margin: 1em auto;
+  text-align: center;
+  text-transform: uppercase; }
 
 h4, .h4 {
   font-size: 1.1em;
@@ -778,12 +782,33 @@ h5, .h5 {
 /*********************
 HEADER STYLES
 *********************/
+#inner-header {
+  background: #0e7ac4;
+  height: 3.15em;
+  position: static;
+  width: 100%; }
+
+.header {
+  position: fixed;
+  z-index: 100; }
+
 header {
-  background: #0e7ac4; }
+  background: #0e7ac4;
+  width: 100%; }
   header h1 {
+    line-height: 1.25em;
     width: 95%;
     margin: 0 auto;
     margin-top: 0.95em; }
+  header h2 {
+    font-weight: 300;
+    padding-bottom: 1.15em;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 1em; }
+
+.scroll-down {
+  display: none; }
 
 #logo {
   margin: 0 auto 0 3em;
@@ -800,6 +825,31 @@ header {
 
 .hire-btn {
   display: none; }
+
+#inner-header.persistent-header {
+  background: white;
+  height: 3.15em;
+  width: 100%; }
+  #inner-header.persistent-header #logo {
+    margin: 0 auto 0 4em; }
+    #inner-header.persistent-header #logo a {
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      height: 1.9em;
+      margin: 0.7em 0 0.9em;
+      padding: 0;
+      width: 1.9em;
+      background-image: url("../images/ian-marquette-sprite.png");
+      background-position-x: 0px;
+      background-position-y: -1000px;
+      background-repeat: no-repeat;
+      background-position-y: -991px;
+      background-color: #363947;
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden; }
+      .svg #inner-header.persistent-header #logo a {
+        background-image: url("../images/ian-marquette-sprite.svg"); }
 
 /*********************
 NAVIGATION STYLES
@@ -824,6 +874,7 @@ and more scalable.
 
 nav {
   float: left;
+  overflow: hidden;
   text-align: center;
   width: 100%;
   margin: 0 auto; }
@@ -831,8 +882,10 @@ nav {
     display: none; }
 
 ul.nav {
-  border-top: #363947 solid 1px;
-  margin-top: 2.45em;
+  background-color: #363947;
+  display: none;
+  margin: 0;
+  padding: 0;
   width: 100%;
   /* end .menu li */
   /* highlight current page */
@@ -861,13 +914,19 @@ ul.nav {
 
 /* end .nav */
 ul.open {
-  background-color: #0e7ac4;
+  background-color: #363947;
   display: block;
   margin: 0;
   padding: 0;
+  width: 100%; }
+
+#inner-header.persistent-header .icon-bar {
+  background: #f27398; }
+#inner-header.persistent-header ul.nav {
+  border-top: 0px; }
+#inner-header.persistent-header ul.open {
   position: relative;
-  width: 100%;
-  z-index: 500; }
+  width: 100%; }
 
 /*********************
 POSTS & CONTENT STYLES
@@ -881,10 +940,9 @@ header {
   -webkit-border-radius: 50%;
   border-radius: 50%;
   height: 8em;
-  margin-top: 1.6em;
+  margin: 4.75em auto 0;
   text-align: center;
-  width: 8em;
-  margin: 0 auto; }
+  width: 8em; }
 
 /* end .hentry */
 /* want to style individual post classes? Booya! */
@@ -1333,6 +1391,24 @@ you can add resource intensive styles.
     max-width: 1000px; }
 
   /*********************
+  HEADER STYLES
+  *********************/
+  header h2.bottom-element {
+    margin-bottom: 10.75em; }
+
+  .scroll-down {
+    display: block;
+    height: 1.6em;
+    margin: 13.2em auto 2.4em;
+    width: 1.6em;
+    background-image: url("../images/ian-marquette-sprite.png");
+    background-position-x: 0px;
+    background-position-y: -800px;
+    background-repeat: no-repeat; }
+    .svg .scroll-down {
+      background-image: url("../images/ian-marquette-sprite.svg"); }
+
+  /*********************
   SIDEBARS & ASIDES
   *********************/
   .sidebar {
@@ -1402,9 +1478,17 @@ you can add resource intensive styles.
   h1, .h1 {
     font-size: 4.1em; }
 
+  h3, .h3 {
+    font-size: 1.6em;
+    margin: 1.1em auto; }
+
   /*********************
   HEADER STYLES
   *********************/
+  #inner-header {
+    background: #0e7ac4;
+    height: 6.4em; }
+
   header {
     background: #0e7ac4; }
     header h1 {
@@ -1464,6 +1548,32 @@ you can add resource intensive styles.
         background-color: white;
         color: #f27398;
         padding: 0.5em 1.2em; }
+
+  #inner-header.persistent-header {
+    height: 6.35em; }
+    #inner-header.persistent-header #logo {
+      float: left;
+      margin: 2.45em 0 2.15em;
+      padding-left: 1em;
+      text-align: left;
+      width: 25%; }
+      #inner-header.persistent-header #logo a {
+        background-color: transparent;
+        background-image: none !important;
+        -webkit-border-radius: 0%;
+        border-radius: 0%;
+        color: #363947;
+        font: 90% "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        letter-spacing: .15em;
+        margin: 0;
+        overflow: normal;
+        padding-top: 0;
+        text-decoration: none;
+        text-indent: 0;
+        text-transform: uppercase;
+        white-space: normal;
+        width: auto; }
 
   /*********************
   NAVIGATION STYLES

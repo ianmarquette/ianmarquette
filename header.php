@@ -42,6 +42,11 @@
 
 		<link href="<?php echo get_template_directory_uri(); ?>/library/headsupgrid/hugrid.css" type="text/css" rel="stylesheet" />
 <script src="<?php echo get_template_directory_uri(); ?>/library/headsupgrid/jquery-1.6.2.min.js"></script>
+
+<script src="<?php echo get_template_directory_uri(); ?>/library/js/waypoints.min.js"></script>
+
+<!-- <script src="<?php echo get_template_directory_uri(); ?>/library/js/nav.js"></script> -->
+
 <script src="<?php echo get_template_directory_uri(); ?>/library/headsupgrid/hugrid.js"></script>
 <script type="text/javascript">
     definegrid = function() {
@@ -101,8 +106,9 @@
     $(document).ready(function() {
 
         $('#menu-toggle').click(function () {
-        $('#menu-main-menu').toggleClass('open');
-        e.preventDefault();
+            $('.open').css('display','block');
+            $('#menu-main-menu').slideToggle('.open'); 
+            e.preventDefault();
         });
     
     });
@@ -110,10 +116,54 @@
     $(document).ready(function() {
 
         $('.menu-item').click(function () {
-        $('#menu-main-menu').toggleClass('open');
-        e.preventDefault();
+            $('#menu-main-menu').slideToggle('open');
+            e.preventDefault();
         });
     
+    });
+</script>
+
+<script> 
+
+ $(document).ready(function() {
+
+$(".scroll-down").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".green-section").offset().top
+    }, 2000);
+});
+
+ });
+</script> 
+
+<script>
+     $(document).ready(function() {
+
+        $(".header-image").waypoint(function(up) {
+            $('.scroll-down').fadeOut('slow', function() {
+                $("h2").addClass("bottom-element");
+            });
+        });
+    });
+</script>
+
+<script>
+     $(document).ready(function() {
+
+        $('nav').waypoint(function(down) {
+            $("h2").removeClass("bottom-element");
+            $('.scroll-down').fadeIn('slow');
+                
+        });
+    });
+</script>
+
+<script>
+     $(document).ready(function() {
+
+        $('h1').waypoint(function() {
+            $("#inner-header").addClass("persistent-header");               
+        });
     });
 </script>
 
@@ -127,7 +177,7 @@
 
 				<div id="inner-header" class="clearfix">
 
-                     <a id="menu-toggle" class="anchor-link" href="#">
+                     <a id="menu-toggle" class="anchor-link">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>

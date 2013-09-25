@@ -165,8 +165,7 @@ BUTTONS
   text-transform: uppercase;
   cursor: pointer; }
   .button:hover, .button:focus, .button:visited:hover, .button:visited:focus {
-    color: white;
-    background-color: #ee4476; }
+    color: #f27398; }
 
 /*********************
 CENTRE ALIGN BOX ELEMENTS
@@ -245,6 +244,17 @@ come into play. Have fun!
 /*********************
 GENERAL STYLES
 *********************/
+/******************************************************************
+H1, H2, H3, H4, H5 STYLES
+******************************************************************/
+h3, .h3 {
+  font-size: 2.6em;
+  width: 90%; }
+
+h4, .h4 {
+  font-size: 1.6em;
+  margin: 0.7em auto; }
+
 /*********************
 LAYOUT & GRID STYLES
 *********************/
@@ -255,19 +265,32 @@ LAYOUT & GRID STYLES
 HEADER STYLES
 *********************/
 header h2.bottom-element {
-  margin-bottom: 10.75em; }
+  margin-bottom: 10.6em; }
+
+.scroll-box {
+  margin: 13.2em auto 2.2em; }
 
 .scroll-down {
   display: block;
   height: 1.6em;
-  margin: 13.2em auto 2.4em;
   width: 1.6em;
   background-image: url("../images/ian-marquette-sprite.png");
   background-position-x: 0px;
   background-position-y: -800px;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  margin: 0 auto; }
   .svg .scroll-down {
     background-image: url("../images/ian-marquette-sprite.svg"); }
+
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+.green-section a:hover, .yellow-section a:hover, .blue-section a:hover, .dark-grey-section a:hover {
+  background-color: white;
+  color: #f27398;
+  width: 12em; }
+.green-section p, .yellow-section p, .blue-section p, .dark-grey-section p {
+  width: 66%; }
 
 /*********************
 SIDEBARS & ASIDES
@@ -333,8 +356,8 @@ h1, .h1 {
   font-size: 4.1em; }
 
 h3, .h3 {
-  font-size: 1.6em;
-  margin: 1.1em auto; }
+  font-size: 2.6em;
+  margin: 1.08em auto; }
 
 /*********************
 HEADER STYLES
@@ -343,20 +366,18 @@ HEADER STYLES
   background: #0e7ac4;
   height: 6.4em; }
 
-header {
-  background: #0e7ac4; }
-  header h1 {
-    font-size: 4.1em;
-    letter-spacing: 0.025em; }
-    header h1:first-letter {
-      margin: 0 -0.26em;
-      padding: 0.1em 0.26em 0;
-      background-image: url("../images/ian-marquette-sprite.png");
-      background-position-x: 0px;
-      background-position-y: 0px;
-      background-repeat: no-repeat; }
-      .svg header h1:first-letter {
-        background-image: url("../images/ian-marquette-sprite.svg"); }
+header h1 {
+  font-size: 4.1em;
+  letter-spacing: 0.025em; }
+  header h1:first-letter {
+    margin: 0 -0.26em;
+    padding: 0.1em 0.26em 0;
+    background-image: url("../images/ian-marquette-sprite.png");
+    background-position-x: 0px;
+    background-position-y: 0px;
+    background-repeat: no-repeat; }
+    .svg header h1:first-letter {
+      background-image: url("../images/ian-marquette-sprite.svg"); }
 
 #logo {
   float: left;
@@ -428,6 +449,9 @@ header {
       text-transform: uppercase;
       white-space: normal;
       width: auto; }
+  #inner-header.persistent-header .hire-btn a:hover {
+    background-color: #363947;
+    color: white; }
 
 /*********************
 NAVIGATION STYLES
@@ -443,6 +467,7 @@ nav {
   margin: 0 auto; }
 
 ul.nav {
+  background: #0e7ac4;
   border-top: 0px;
   display: block;
   margin-top: 2.45em; }
@@ -477,11 +502,247 @@ ul.nav {
         -transition: border-color 0.2s linear;
         transition: border-color 0.2s linear; }
 
+#inner-header.persistent-header ul.nav {
+  background: white; }
+  #inner-header.persistent-header ul.nav a {
+    color: #363947; }
+
 /*********************
 POSTS & CONTENT STYLES
 *********************/
 .header-image {
-  margin-top: 0em; }
+  margin-top: 9.6em; }
+
+.project-001,
+.project-002,
+.project-003,
+.dark-grey-section .sixcol,
+.white-section .sixcol {
+  opacity: 0; }
+
+/*********************
+ANIMATION
+*********************/
+.animated {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s; }
+
+.animated.hinge {
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s; }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  animation-name: fadeIn; }
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px); }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0); } }
+
+@-moz-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(20px); }
+
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0); } }
+
+@-o-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -o-transform: translateY(20px); }
+
+  100% {
+    opacity: 1;
+    -o-transform: translateY(0); } }
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  -moz-animation-name: fadeInUp;
+  -o-animation-name: fadeInUp;
+  animation-name: fadeInUp; }
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px); }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0); } }
+
+@-moz-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(-20px); }
+
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0); } }
+
+@-o-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -o-transform: translateY(-20px); }
+
+  100% {
+    opacity: 1;
+    -o-transform: translateY(0); } }
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px); }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  -moz-animation-name: fadeInDown;
+  -o-animation-name: fadeInDown;
+  animation-name: fadeInDown; }
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px); }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0); } }
+
+@-moz-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(-20px); }
+
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0); } }
+
+@-o-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -o-transform: translateX(-20px); }
+
+  100% {
+    opacity: 1;
+    -o-transform: translateX(0); } }
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px); }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  -moz-animation-name: fadeInLeft;
+  -o-animation-name: fadeInLeft;
+  animation-name: fadeInLeft; }
+
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(20px); }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0); } }
+
+@-moz-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(20px); }
+
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0); } }
+
+@-o-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -o-transform: translateX(20px); }
+
+  100% {
+    opacity: 1;
+    -o-transform: translateX(0); } }
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20px); }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  -moz-animation-name: fadeInRight;
+  -o-animation-name: fadeInRight;
+  animation-name: fadeInRight; }
 
 /******************************************************************
 Site Name: 

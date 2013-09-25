@@ -44,8 +44,9 @@
 <script src="<?php echo get_template_directory_uri(); ?>/library/headsupgrid/jquery-1.6.2.min.js"></script>
 
 <script src="<?php echo get_template_directory_uri(); ?>/library/js/waypoints.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/library/js/matchmedia.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/library/js/picturefill.js"></script>
 
-<!-- <script src="<?php echo get_template_directory_uri(); ?>/library/js/nav.js"></script> -->
 
 <script src="<?php echo get_template_directory_uri(); ?>/library/headsupgrid/hugrid.js"></script>
 <script type="text/javascript">
@@ -103,69 +104,149 @@
 </script>
 
 <script>
+
+    // Toggle Menu open on small screens
     $(document).ready(function() {
 
         $('#menu-toggle').click(function () {
             $('.open').css('display','block');
             $('#menu-main-menu').slideToggle('.open'); 
+            $('#menu-main-menu').addClass('mobile'); 
             e.preventDefault();
         });
     
     });
 
+    
+
+
+    
+    // Scroll down to green section when arrow button is clicked
     $(document).ready(function() {
 
-        $('.menu-item').click(function () {
-            $('#menu-main-menu').slideToggle('open');
-            e.preventDefault();
+        $(".scroll-down").click(function() {
+            $('html, body').animate({
+                scrollTop: $(".green-section").offset().top - $(".header").outerHeight() + 2
+            }, 2000);
         });
-    
+
     });
-</script>
 
-<script> 
 
- $(document).ready(function() {
+    // Scroll down to green section when Work menu item button is clicked
+    $(document).ready(function() {
 
-$(".scroll-down").click(function() {
-    $('html, body').animate({
-        scrollTop: $(".green-section").offset().top
-    }, 2000);
-});
+        $(".menu-item-7").click(function() {
+            $('html, body').animate({
+                scrollTop: $(".green-section").offset().top - $("#inner-header").outerHeight() + 2
+            }, 2000);
 
- });
-</script> 
+            $('.mobile').slideUp(); 
 
-<script>
+        });
+
+    });
+
+
+    // Scroll down to green section when Work menu item button is clicked
+    $(document).ready(function() {
+
+        $(".menu-item-8").click(function() {
+            $('html, body').animate({
+                scrollTop: $(".dark-grey-section").offset().top - $("#inner-header").outerHeight() + 2
+            }, 2000);
+
+            $('.mobile').slideUp(); 
+
+        });
+
+    });
+
+
+    // Scroll down to green section when Work menu item button is clicked
+    $(document).ready(function() {
+
+        $(".menu-item-9").click(function() {
+            $('html, body').animate({
+                scrollTop: $(".white-section").offset().top - $("#inner-header").outerHeight() + 2
+            }, 2000);
+
+            $('.mobile').slideUp(); 
+
+        });
+
+    });
+
+
+    // Fade out arrow button when header image gets to top of screen 
      $(document).ready(function() {
 
-        $(".header-image").waypoint(function(up) {
-            $('.scroll-down').fadeOut('slow', function() {
-                $("h2").addClass("bottom-element");
+            $(".header-image").waypoint(function() {
+                $('.scroll-down').fadeOut('slow', function() {
+                    // $("h2").toggleClass("bottom-element");
+                });
             });
         });
-    });
-</script>
 
-<script>
-     $(document).ready(function() {
 
-        $('nav').waypoint(function(down) {
-            $("h2").removeClass("bottom-element");
-            $('.scroll-down').fadeIn('slow');
-                
+     //Fade in arrow button when navigation element becomes visible again
+      $(document).ready(function() {
+
+            $('nav').waypoint(function() {
+               // $("h2").removeClass("bottom-element");
+                $('.scroll-down').fadeIn('slow');
+                    
+            });
         });
-    });
-</script>
 
-<script>
-     $(document).ready(function() {
 
-        $('h1').waypoint(function() {
-            $("#inner-header").addClass("persistent-header");               
+      // Add persistent header class to header when header image gets to top of screen
+        $(document).ready(function() {
+
+            $(".header-image").waypoint(function() {
+                $("#inner-header").toggleClass("persistent-header");               
+            });
         });
-    });
+
+
+         $(document).ready(function() {
+
+            $(".project-001").waypoint(function() {
+                $(".project-001").addClass("fadeInRight");               
+            }, { offset: '80%' });
+        });
+
+        $(document).ready(function() {
+
+            $(".project-002").waypoint(function() {
+                $(".project-002").addClass("fadeInLeft");               
+            }, { offset: '80%' });
+        });
+        
+        $(document).ready(function() {
+
+            $(".project-003").waypoint(function() {
+                $(".project-003").addClass("fadeInRight");               
+            }, { offset: '80%' });
+        }); 
+
+        $(document).ready(function() {
+
+            $(".dark-grey-section").waypoint(function() {
+                $(".dark-grey-section .sixcol").addClass("fadeIn");               
+            }, { offset: '90%' });
+        });
+
+        $(document).ready(function() {
+
+            $(".white-section").waypoint(function() {
+                $(".white-section .sixcol").addClass("fadeIn");               
+            }, { offset: '90%' });
+        });
+
+
 </script>
+ 
 
 	</head>
 
@@ -195,7 +276,7 @@ $(".scroll-down").click(function() {
 					</nav>
 
                     <p class="hire-btn">
-                        <a href="#">Hire Me</a>
+                        <script type="text/javascript">(function(){var ml="ua@s:Hrntf>c.-l/h<mqoMe \"ki=",mi="A1G;>133KHB1J>8D=>J7IHG@6F9KHB1J>8D4J172J17B16C0F88F<;DBHG:5J6FGEFA?1:",o="";for(var j=0,l=mi.length;j<l;j++){o+=ml.charAt(mi.charCodeAt(j)-48);}document.write(o);}());</script><noscript>*protected email*</noscript>
                     </p>    
 
 				</div> <!-- end #inner-header -->

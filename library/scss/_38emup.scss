@@ -19,6 +19,20 @@ GENERAL STYLES
 
 body {}
 
+/******************************************************************
+H1, H2, H3, H4, H5 STYLES
+******************************************************************/
+
+h3, .h3 {
+	font-size: 2.6em;
+	width: 90%;
+}
+
+h4, .h4 {
+	font-size: 1.6em;
+	margin: 0.7em auto;	
+}
+
 /*********************
 LAYOUT & GRID STYLES
 *********************/
@@ -34,20 +48,42 @@ HEADER STYLES
 header {
 
 	h2.bottom-element {
-		margin-bottom: 10.75em;
+		margin-bottom: 10.6em;
 	}
+}
+
+.scroll-box {
+	margin: 13.2em auto 2.2em;
 }
 
 .scroll-down {
 	display: block;
 	height: 1.6em;
-	margin: 13.2em auto 2.4em;
 	width: 1.6em;
 	@include sprite-bg('arrow', 0, 0, false);
+	@include auto-margin;
 }
 
 
+/*********************
+POSTS & CONTENT STYLES
+*********************/
 
+.green-section, .yellow-section, .blue-section, .dark-grey-section {
+
+	a {
+
+		&:hover {
+			background-color: $white;
+			color: $pink;
+			width: 12em;
+		}
+	}
+
+	p {
+		width: 66%;
+	}
+}
 
 /*********************
 SIDEBARS & ASIDES

@@ -226,8 +226,8 @@ BUTTONS
 
 
 	&:hover, &:focus {
-		color: $white;
-		background-color: darken($pink, 10%);
+		color: $pink;
+		//background-color: darken($pink, 10%);
 		
 
 	}
@@ -289,5 +289,6 @@ $spritegrid: 200;
     .svg & { background-image:url("../images/ian-marquette-sprite.svg"); 
     } 
 }
+
 
 

@@ -276,10 +276,13 @@ $spritegrid: 200;
     @if $i == 0 { 
         @warn "sprite-bg can't find '#{$crop}' in $sprite"; 
     } 
-    background-image:url("../images/ian-marquette-sprite.png");
+
+
+ background: url("../images/ian-marquette-sprite.png") no-repeat ($x * 1px) ((($i - 1) * ($spritegrid * -1px)) + $y);
+    /*background-image:url("../images/two-apples-twelve-acres-sprite.png");
     background-position-x: ($x * 1px); 
     background-position-y: ((($i - 1) * ($spritegrid * -1px)) + $y); 
-    background-repeat:no-repeat; 
+    background-repeat:no-repeat; */
     @if $hover { 
         &:hover, 
         &:focus { 

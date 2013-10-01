@@ -927,10 +927,11 @@ header {
       margin: 0.7em 0 0.9em;
       padding: 0;
       width: 1.9em;
-      background-image: url("../images/ian-marquette-sprite.png");
-      background-position-x: 0px;
-      background-position-y: -1000px;
-      background-repeat: no-repeat;
+      background: url("../images/ian-marquette-sprite.png") no-repeat 0px -1000px;
+      /*background-image:url("../images/two-apples-twelve-acres-sprite.png");
+      background-position-x: ($x * 1px); 
+      background-position-y: ((($i - 1) * ($spritegrid * -1px)) + $y); 
+      background-repeat:no-repeat; */
       background-position-y: -991px;
       background-color: #363947;
       text-indent: 100%;
@@ -1038,7 +1039,6 @@ header {
     display: block;
     max-width: 90%;
     text-align: center;
-    width: 90%;
     margin: 0 auto; }
 
 a.project-button {
@@ -1073,10 +1073,11 @@ p.project-excerpt {
   height: 1.6em;
   margin: 0 auto 1.6em;
   width: 3.44em;
-  background-image: url("../images/ian-marquette-sprite.png");
-  background-position-x: 0px;
-  background-position-y: 0px;
-  background-repeat: no-repeat; }
+  background: url("../images/ian-marquette-sprite.png") no-repeat 0px 0px;
+  /*background-image:url("../images/two-apples-twelve-acres-sprite.png");
+  background-position-x: ($x * 1px); 
+  background-position-y: ((($i - 1) * ($spritegrid * -1px)) + $y); 
+  background-repeat:no-repeat; */ }
   .svg .bio-eye {
     background-image: url("../images/ian-marquette-sprite.svg"); }
 
@@ -1642,10 +1643,11 @@ you can add resource intensive styles.
     display: block;
     height: 1.6em;
     width: 1.6em;
-    background-image: url("../images/ian-marquette-sprite.png");
-    background-position-x: 0px;
-    background-position-y: -800px;
-    background-repeat: no-repeat;
+    background: url("../images/ian-marquette-sprite.png") no-repeat 0px -800px;
+    /*background-image:url("../images/two-apples-twelve-acres-sprite.png");
+    background-position-x: ($x * 1px); 
+    background-position-y: ((($i - 1) * ($spritegrid * -1px)) + $y); 
+    background-repeat:no-repeat; */
     margin: 0 auto; }
     .svg .scroll-down {
       background-image: url("../images/ian-marquette-sprite.svg"); }
@@ -1705,10 +1707,11 @@ you can add resource intensive styles.
       display: block;
       height: 1.6em;
       width: 1.6em;
-      background-image: url("../images/ian-marquette-sprite.png");
-      background-position-x: 0px;
-      background-position-y: -800px;
-      background-repeat: no-repeat;
+      background: url("../images/ian-marquette-sprite.png") no-repeat 0px -800px;
+      /*background-image:url("../images/two-apples-twelve-acres-sprite.png");
+      background-position-x: ($x * 1px); 
+      background-position-y: ((($i - 1) * ($spritegrid * -1px)) + $y); 
+      background-repeat:no-repeat; */
       margin: 0 auto;
       -webkit-transform: rotate(180deg);
       /* Chrome, Safari 3.1+ */
@@ -1786,10 +1789,11 @@ you can add resource intensive styles.
     header h1:first-letter {
       margin: 0 -0.26em;
       padding: 0.1em 0.26em 0;
-      background-image: url("../images/ian-marquette-sprite.png");
-      background-position-x: 0px;
-      background-position-y: 0px;
-      background-repeat: no-repeat; }
+      background: url("../images/ian-marquette-sprite.png") no-repeat 0px 0px;
+      /*background-image:url("../images/two-apples-twelve-acres-sprite.png");
+      background-position-x: ($x * 1px); 
+      background-position-y: ((($i - 1) * ($spritegrid * -1px)) + $y); 
+      background-repeat:no-repeat; */ }
       .svg header h1:first-letter {
         background-image: url("../images/ian-marquette-sprite.svg"); }
 
@@ -1969,10 +1973,11 @@ you can add resource intensive styles.
     display: block;
     height: 1.6em;
     width: 1.6em;
-    background-image: url("../images/ian-marquette-sprite.png");
-    background-position-x: 0px;
-    background-position-y: -800px;
-    background-repeat: no-repeat;
+    background: url("../images/ian-marquette-sprite.png") no-repeat 0px -800px;
+    /*background-image:url("../images/two-apples-twelve-acres-sprite.png");
+    background-position-x: ($x * 1px); 
+    background-position-y: ((($i - 1) * ($spritegrid * -1px)) + $y); 
+    background-repeat:no-repeat; */
     margin: 0 auto;
     -webkit-transform: rotate(180deg);
     /* Chrome, Safari 3.1+ */

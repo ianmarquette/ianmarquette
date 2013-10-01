@@ -76,7 +76,7 @@
 										        </noscript>
     										</span>
 										<p class="project-excerpt"><?php the_field('project_002_excerpt'); ?></p>
-										<a class="project-button button" href="<?php the_field('project_001_link'); ?>">View Project</a>
+										<a class="project-button button" href="<?php the_field('project_002_link'); ?>">View Project</a>
 									</div>	
 
 								</section><!-- end yellow section -->

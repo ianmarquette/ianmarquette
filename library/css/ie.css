@@ -272,10 +272,11 @@ header h2.bottom-element {
   display: block;
   height: 1.6em;
   width: 1.6em;
-  background-image: url("../images/ian-marquette-sprite.png");
-  background-position-x: 0px;
-  background-position-y: -800px;
-  background-repeat: no-repeat;
+  background: url("../images/ian-marquette-sprite.png") no-repeat 0px -800px;
+  /*background-image:url("../images/two-apples-twelve-acres-sprite.png");
+  background-position-x: ($x * 1px); 
+  background-position-y: ((($i - 1) * ($spritegrid * -1px)) + $y); 
+  background-repeat:no-repeat; */
   margin: 0 auto; }
   .svg .scroll-down {
     background-image: url("../images/ian-marquette-sprite.svg"); }
@@ -335,10 +336,11 @@ POSTS & CONTENT STYLES
     display: block;
     height: 1.6em;
     width: 1.6em;
-    background-image: url("../images/ian-marquette-sprite.png");
-    background-position-x: 0px;
-    background-position-y: -800px;
-    background-repeat: no-repeat;
+    background: url("../images/ian-marquette-sprite.png") no-repeat 0px -800px;
+    /*background-image:url("../images/two-apples-twelve-acres-sprite.png");
+    background-position-x: ($x * 1px); 
+    background-position-y: ((($i - 1) * ($spritegrid * -1px)) + $y); 
+    background-repeat:no-repeat; */
     margin: 0 auto;
     -webkit-transform: rotate(180deg);
     /* Chrome, Safari 3.1+ */
@@ -410,10 +412,11 @@ header h1 {
   header h1:first-letter {
     margin: 0 -0.26em;
     padding: 0.1em 0.26em 0;
-    background-image: url("../images/ian-marquette-sprite.png");
-    background-position-x: 0px;
-    background-position-y: 0px;
-    background-repeat: no-repeat; }
+    background: url("../images/ian-marquette-sprite.png") no-repeat 0px 0px;
+    /*background-image:url("../images/two-apples-twelve-acres-sprite.png");
+    background-position-x: ($x * 1px); 
+    background-position-y: ((($i - 1) * ($spritegrid * -1px)) + $y); 
+    background-repeat:no-repeat; */ }
     .svg header h1:first-letter {
       background-image: url("../images/ian-marquette-sprite.svg"); }
 
@@ -593,10 +596,11 @@ a.scroll-up {
   display: block;
   height: 1.6em;
   width: 1.6em;
-  background-image: url("../images/ian-marquette-sprite.png");
-  background-position-x: 0px;
-  background-position-y: -800px;
-  background-repeat: no-repeat;
+  background: url("../images/ian-marquette-sprite.png") no-repeat 0px -800px;
+  /*background-image:url("../images/two-apples-twelve-acres-sprite.png");
+  background-position-x: ($x * 1px); 
+  background-position-y: ((($i - 1) * ($spritegrid * -1px)) + $y); 
+  background-repeat:no-repeat; */
   margin: 0 auto;
   -webkit-transform: rotate(180deg);
   /* Chrome, Safari 3.1+ */

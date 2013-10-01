@@ -71,7 +71,7 @@ POSTS & CONTENT STYLES
 
 .green-section, .yellow-section, .blue-section, .dark-grey-section {
 
-	a {
+	a.project-button {
 
 		&:hover {
 			background-color: $white;
@@ -83,6 +83,52 @@ POSTS & CONTENT STYLES
 	p {
 		width: 66%;
 	}
+}
+
+.white-section {
+
+	p {
+		width: 66%;
+
+		a {
+			width: inherit;
+			@include transition(color 0.2s linear);
+
+		&:hover {
+			color: $dark-grey;
+		}
+
+	}
+
+	
+}
+
+/*********************
+CASE STUDIES
+*********************/
+
+.scroll-up-box {
+	display: block;
+	margin: 1em auto;
+}
+
+a.scroll-up {
+	display: block;
+	height: 1.6em;
+	width: 1.6em;
+	@include sprite-bg('arrow', 0, 0, false);
+	@include auto-margin; 
+	-webkit-transform: rotate(180deg);  /* Chrome, Safari 3.1+ */
+    -moz-transform: rotate(180deg);  /* Firefox 3.5-15 */
+     -ms-transform: rotate(180deg);  /* IE 9 */
+     -o-transform: rotate(180deg);  /* Opera 10.50-12.00 */
+     transform: rotate(180deg);  /* Firefox 16+, IE 10+, Opera 12.10+ */
+}
+
+a.scroll-up:hover {
+	background-color: white;
+	color: #f27398;
+	width: 12em;
 }
 
 /*********************
@@ -233,3 +279,4 @@ mobile. Make sure to double check these!
 	}
 } /* end .footer-links */
 
+}

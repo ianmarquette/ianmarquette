@@ -164,8 +164,6 @@ BUTTONS
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer; }
-  .button:hover, .button:focus, .button:visited:hover, .button:visited:focus {
-    color: #f27398; }
 
 /*********************
 CENTRE ALIGN BOX ELEMENTS
@@ -285,60 +283,100 @@ header h2.bottom-element {
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-.green-section a:hover, .yellow-section a:hover, .blue-section a:hover, .dark-grey-section a:hover {
+.green-section a.project-button:hover, .yellow-section a.project-button:hover, .blue-section a.project-button:hover, .dark-grey-section a.project-button:hover {
   background-color: white;
   color: #f27398;
   width: 12em; }
 .green-section p, .yellow-section p, .blue-section p, .dark-grey-section p {
   width: 66%; }
 
-/*********************
-SIDEBARS & ASIDES
-*********************/
-.sidebar {
-  margin-top: 2.2em; }
-
-.widgettitle {
-  border-bottom: 2px solid #444;
-  margin-bottom: 0.75em; }
-
-.widget {
-  padding: 0 10px;
-  margin: 2.2em 0; }
-  .widget ul li {
-    margin-bottom: 0.75em;
-    /* deep nesting */ }
-    .widget ul li ul {
-      margin-top: 0.75em;
-      padding-left: 1em; }
-
-/* links widget */
-/* meta widget */
-/* pages widget */
-/* recent-posts widget */
-/* archives widget */
-/* tag-cloud widget */
-/* calendar widget */
-/* category widget */
-/* recent-comments widget */
-/* search widget */
-/* text widget */
-/*********************
-FOOTER STYLES
-*********************/
-/*
-you'll probably need to do quite a bit
-of overriding here if you styled them for
-mobile. Make sure to double check these!
-*/
-.footer-links ul li {
+.white-section {
+  /*********************
+  CASE STUDIES
+  *********************/
+  /*********************
+  SIDEBARS & ASIDES
+  *********************/
+  /* links widget */
+  /* meta widget */
+  /* pages widget */
+  /* recent-posts widget */
+  /* archives widget */
+  /* tag-cloud widget */
+  /* calendar widget */
+  /* category widget */
+  /* recent-comments widget */
+  /* search widget */
+  /* text widget */
+  /*********************
+  FOOTER STYLES
+  *********************/
   /*
-  be careful with the depth of your menus.
-  it's very rare to have multi-depth menus in
-  the footer.
-  */ }
+  you'll probably need to do quite a bit
+  of overriding here if you styled them for
+  mobile. Make sure to double check these!
+  */
+  /* end .footer-links */ }
+  .white-section p {
+    width: 66%; }
+    .white-section p a {
+      width: inherit;
+      -webkit-transition: color 0.2s linear;
+      -ms-transition: color 0.2s linear;
+      -o-transition: color 0.2s linear;
+      -transition: color 0.2s linear;
+      transition: color 0.2s linear; }
+      .white-section p a:hover {
+        color: #363947; }
+  .white-section .scroll-up-box {
+    display: block;
+    margin: 1em auto; }
+  .white-section a.scroll-up {
+    display: block;
+    height: 1.6em;
+    width: 1.6em;
+    background-image: url("../images/ian-marquette-sprite.png");
+    background-position-x: 0px;
+    background-position-y: -800px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    -webkit-transform: rotate(180deg);
+    /* Chrome, Safari 3.1+ */
+    -moz-transform: rotate(180deg);
+    /* Firefox 3.5-15 */
+    -ms-transform: rotate(180deg);
+    /* IE 9 */
+    -o-transform: rotate(180deg);
+    /* Opera 10.50-12.00 */
+    transform: rotate(180deg);
+    /* Firefox 16+, IE 10+, Opera 12.10+ */ }
+    .svg .white-section a.scroll-up {
+      background-image: url("../images/ian-marquette-sprite.svg"); }
+  .white-section a.scroll-up:hover {
+    background-color: white;
+    color: #f27398;
+    width: 12em; }
+  .white-section .sidebar {
+    margin-top: 2.2em; }
+  .white-section .widgettitle {
+    border-bottom: 2px solid #444;
+    margin-bottom: 0.75em; }
+  .white-section .widget {
+    padding: 0 10px;
+    margin: 2.2em 0; }
+    .white-section .widget ul li {
+      margin-bottom: 0.75em;
+      /* deep nesting */ }
+      .white-section .widget ul li ul {
+        margin-top: 0.75em;
+        padding-left: 1em; }
+  .white-section .footer-links ul li {
+    /*
+    be careful with the depth of your menus.
+    it's very rare to have multi-depth menus in
+    the footer.
+    */ }
 
-/* end .footer-links */
 /******************************************************************
 Site Name: 
 Author: 
@@ -517,8 +555,61 @@ POSTS & CONTENT STYLES
 .project-002,
 .project-003,
 .dark-grey-section .sixcol,
-.white-section .sixcol {
+.white-section .sixcol,
+.case-study-001,
+.case-study-002,
+.case-study-003 {
   opacity: 0; }
+
+.white-section a.icon-instagram:hover,
+.white-section a.icon-github:hover,
+.white-section a.icon-pinterest:hover,
+.white-section a.icon-linkedin:hover,
+.white-section a.icon-twitter:hover,
+.white-section a.icon-skype:hover {
+  background-color: #363947 !important; }
+
+/*********************
+CASE STUDIES
+*********************/
+.case-study h1 {
+  font-size: 4.1em; }
+
+.case-study .green-section span img, .case-study .yellow-section span img, .case-study .blue-section span img, .case-study .dark-grey-section span img {
+  margin: 3.2em auto; }
+
+figure.quote blockquote {
+  font-size: 2em;
+  margin: 1em auto 0.5em; }
+
+figure.quote figcaption {
+  margin: 0 auto 1.6em; }
+
+.scroll-up-box {
+  display: block;
+  margin: 3em auto; }
+
+a.scroll-up {
+  display: block;
+  height: 1.6em;
+  width: 1.6em;
+  background-image: url("../images/ian-marquette-sprite.png");
+  background-position-x: 0px;
+  background-position-y: -800px;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  -webkit-transform: rotate(180deg);
+  /* Chrome, Safari 3.1+ */
+  -moz-transform: rotate(180deg);
+  /* Firefox 3.5-15 */
+  -ms-transform: rotate(180deg);
+  /* IE 9 */
+  -o-transform: rotate(180deg);
+  /* Opera 10.50-12.00 */
+  transform: rotate(180deg);
+  /* Firefox 16+, IE 10+, Opera 12.10+ */ }
+  .svg a.scroll-up {
+    background-image: url("../images/ian-marquette-sprite.svg"); }
 
 /*********************
 ANIMATION

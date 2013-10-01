@@ -8,7 +8,7 @@
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
-								<section class="home-section">
+								<section class="home-section home-blue-block">
 
 									<header class="wrap sixcol animated fadeIn">
 
@@ -35,7 +35,7 @@
 
 								</section>
 
-								<section class="green-section">
+								<section class="green-section home-green-block" id="work">
 
 									<div class="wrap sixcol">
 										<h3><?php the_field('project_001_title'); ?></h3>
@@ -52,8 +52,8 @@
 										            <img src="<?php the_field('project_001_image_small'); ?>" alt="<?php the_field('project_001_image_alt_tag'); ?>">
 										        </noscript>
     										</span>
-										<p><?php the_field('project_001_excerpt'); ?></p>
-										<a href="<?php the_field('project_001_link'); ?>" class="button">View Project</a>
+										<p class="project-excerpt"><?php the_field('project_001_excerpt'); ?></p>
+										<a class="project-button button" href="<?php the_field('project_001_link'); ?>">View Project</a>
 									</div>	
 
 								</section><!-- end green section -->	
@@ -75,8 +75,8 @@
 										            <img src="<?php the_field('project_002_image_small'); ?>" alt="<?php the_field('project_002_image_alt_tag'); ?>">
 										        </noscript>
     										</span>
-										<p><?php the_field('project_002_excerpt'); ?></p>
-										<a href="<?php the_field('project_001_link'); ?>" class="button">View Project</a>
+										<p class="project-excerpt"><?php the_field('project_002_excerpt'); ?></p>
+										<a class="project-button button" href="<?php the_field('project_001_link'); ?>">View Project</a>
 									</div>	
 
 								</section><!-- end yellow section -->
@@ -98,13 +98,13 @@
 										            <img src="<?php the_field('project_003_image_small'); ?>" alt="<?php the_field('project_003_image_alt_tag'); ?>">
 										        </noscript>
     										</span>
-										<p><?php the_field('project_003_excerpt'); ?></p>
-										<a href="<?php the_field('project_001_link'); ?>" class="button">View Project</a>
+										<p class="project-excerpt"><?php the_field('project_003_excerpt'); ?></p>
+										<a class="project-button button" href="<?php the_field('project_003_link'); ?>">View Project</a>
 									</div>	
 
 								</section><!-- end blue section -->	
 
-								<section class="dark-grey-section">
+								<section class="dark-grey-section home-dark-grey-block" id="about">
 
 									<div class="wrap sixcol animated">
 										<h4>About Me</h4>
@@ -115,7 +115,7 @@
 
 								</section><!-- end dark grey section -->	
 
-								<section class="white-section">
+								<section class="white-section home-white-block" id="contact">
 
 									<div class="wrap sixcol animated">
 										<h4>Contact Me</h4>
@@ -123,12 +123,12 @@
 										<p><span itemprop="telephone"><a href="tel:<?php the_field('telephone_number'); ?>"><?php the_field('telephone_number'); ?></a></span></p>
 										<p><script type="text/javascript">(function(){var ml="hr:ao/<lmf>\"c.iu=ske@n tq-",mi="63F<73AA@;83>7G4I7>EB;F01C9@;83>7G42>3ED>3E831H?CGGC=<48;F:>3ED>3E831H?CGGC=<48653:",o="";for(var j=0,l=mi.length;j<l;j++){o+=ml.charAt(mi.charCodeAt(j)-48);}document.write(o);}());</script><noscript>*protected email*</noscript></p>
 										<ul>
-											<li><a href="#" aria-hidden="true" class="icon-skype"></a></li>
-											<li><a href="#" aria-hidden="true" class="icon-twitter"></a></li>
-											<li><a href="#" aria-hidden="true" class="icon-instagram"></a></li>
-											<li><a href="#" aria-hidden="true" class="icon-linkedin"></a></li>
-											<li><a href="#" aria-hidden="true" class="icon-pinterest"></a></li>
-											<li><a href="#" aria-hidden="true" class="icon-github"></a></li>
+											<li><a href="skype:ianmarquette.com?call" aria-hidden="true" class="icon-skype"></a></li>
+											<li><a href="https://twitter.com/ianmarquette" aria-hidden="true" class="icon-twitter"></a></li>
+											<li><a href="http://instagram.com/ianmarquette" aria-hidden="true" class="icon-instagram"></a></li>
+											<li><a href="http://ca.linkedin.com/in/ianmarquette/" aria-hidden="true" class="icon-linkedin"></a></li>
+											<li><a href="http://www.pinterest.com/ianmarquette/" aria-hidden="true" class="icon-pinterest"></a></li>
+											<li><a href="https://github.com/ianmarquette" aria-hidden="true" class="icon-github"></a></li>
 										</ul>	
 									</div>	
 

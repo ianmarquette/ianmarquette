@@ -70,6 +70,7 @@ you can use the generic selector below, but it's slower:
 	text-transform: none;
 	-webkit-font-smoothing: antialiased;
 	width: 2.4em;
+	@include transition(background-color 0.2s linear);
 }
 
 
@@ -193,7 +194,7 @@ LAYOUT & GRID STYLES
 LINK STYLES
 *********************/
 
-a, a:visited {
+a {
 	color: $link-color;
 
 	/* on hover */
@@ -513,13 +514,11 @@ header {
 		}
 	}
 
-	p {
-		margin: 2.4em auto 1em;
-		text-align: center;
-		width: 90%;
-	}
+	
 
-	a {
+}
+
+a.project-button {
 		@include button;
 		display: block;
 		margin: 1.8em auto;
@@ -529,7 +528,12 @@ header {
 		@include transition(all 0.2s linear);
 
 	}
-}
+
+p.project-excerpt {
+		margin: 2.4em auto 1em;
+		text-align: center;
+		width: 90%;
+	}
 
 
 .bio-eye {
@@ -542,6 +546,7 @@ header {
 .white-section, .dark-grey-section {
 	p {
 		margin: 0 auto 1.6em;
+		text-align: center;
 	}
 }
 
@@ -564,7 +569,7 @@ header {
 		@include auto-margin;
 
 		&:hover {
-			color: $blue;
+			//color: $blue;
 		}
 
 	}
@@ -750,6 +755,70 @@ ul {
 		.size-large {}
 		.size-medium {}
 		.size-thumbnail {}
+
+
+/*********************
+CASE STUDIES
+*********************/
+
+.case-study h1 {
+	font-weight: 700;
+	letter-spacing: 0.02em;
+	margin-top: 3.27em;
+	text-align: center;
+}
+
+.case-study .green-section p:last-of-type {
+	margin-bottom: 1.6em;
+}
+
+.case-study {
+	.green-section, .yellow-section, .blue-section, .dark-grey-section {
+
+		span img {
+			margin: 1.6em auto;
+		}
+	}
+}
+
+.case-study	p {
+		margin: 1.6em auto 1em;
+		text-align: center;
+		width: 90%;
+	}
+
+figure.quote blockquote,
+figure.quote figcaption {
+	font-family: $sans-serif;
+	margin: 1.6em auto;
+	text-align: center;
+	width: 90%;
+}
+
+
+blockquote:before {
+	color: $yellow;
+	content: '\201C';
+}
+
+blockquote:after {
+	color: $yellow;
+	content: '\201D';
+}
+
+figure.quote figcaption	{
+	color: $yellow;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+	margin-bottom: 1.6em;
+	text-transform: uppercase;
+}
+
+
+.scroll-up-box {
+	display: none;
+}
+
 
 /******************************************************************
 PAGE NAVI STYLES
@@ -1198,5 +1267,5 @@ FOOTER STYLES
 
 	.copyright {}
 
-	
+
 

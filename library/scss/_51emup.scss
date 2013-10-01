@@ -212,8 +212,69 @@ POSTS & CONTENT STYLES
 .project-002,
 .project-003,
 .dark-grey-section .sixcol,
-.white-section .sixcol {
+.white-section .sixcol,
+.case-study-001,
+.case-study-002,
+.case-study-003 {
 	opacity: 0;
+}
+
+.white-section a.icon-instagram:hover, 
+.white-section a.icon-github:hover, 
+.white-section a.icon-pinterest:hover, 
+.white-section a.icon-linkedin:hover, 
+.white-section a.icon-twitter:hover, 
+.white-section a.icon-skype:hover {
+	background-color: $dark-grey !important;
+
+}
+
+/*********************
+CASE STUDIES
+*********************/
+
+.case-study h1 {
+	font-size: 4.1em;
+}
+
+.case-study {
+	.green-section, .yellow-section, .blue-section, .dark-grey-section {
+
+		span img {
+			margin: 3.2em auto;
+		}
+	}
+}
+
+figure.quote blockquote,
+ {
+ 	font-size: 2em;
+	margin: 1em auto 0.5em;
+
+}
+
+figure.quote figcaption,
+ {
+	margin: 0 auto 1.6em;
+
+}
+
+.scroll-up-box {
+	display: block;
+	margin: 3em auto;
+}
+
+a.scroll-up {
+	display: block;
+	height: 1.6em;
+	width: 1.6em;
+	@include sprite-bg('arrow', 0, 0, false);
+	@include auto-margin; 
+	-webkit-transform: rotate(180deg);  /* Chrome, Safari 3.1+ */
+    -moz-transform: rotate(180deg);  /* Firefox 3.5-15 */
+     -ms-transform: rotate(180deg);  /* IE 9 */
+     -o-transform: rotate(180deg);  /* Opera 10.50-12.00 */
+     transform: rotate(180deg);  /* Firefox 16+, IE 10+, Opera 12.10+ */
 }
 
 

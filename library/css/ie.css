@@ -1,6 +1,6 @@
 /******************************************************************
-Site Name: 
-Author: 
+Site Name: IanMarquette.com
+Author: Ian Marquette
 
 Stylesheet: IE Stylesheet
 
@@ -18,8 +18,8 @@ import the mixins file so SASS can understand the variables.
 */
 /* import mixins */
 /******************************************************************
-Site Name:
-Author:
+Site Name: IanMarquette.com
+Author: Ian Marquette
 
 Stylesheet: Mixins & Constants Stylesheet
 
@@ -172,8 +172,8 @@ CENTRE ALIGN BOX ELEMENTS
 SPRITES
 *********************/
 /******************************************************************
-Site Name:
-Author:
+Site Name: IanMarquette.com
+Author: Ian Marquette
 
 Stylesheet: Grid Stylesheet
 
@@ -227,8 +227,8 @@ values are commented out on each line.
   float: right; }
 
 /******************************************************************
-Site Name:
-Author:
+Site Name: IanMarquette.com
+Author: Ian Marquette
 
 Stylesheet: Tablet & Small Desktop Stylesheet
 
@@ -239,9 +239,6 @@ and other resources. You'll also notice the grid starts to
 come into play. Have fun!
 
 ******************************************************************/
-/*********************
-GENERAL STYLES
-*********************/
 /******************************************************************
 H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
@@ -288,36 +285,17 @@ POSTS & CONTENT STYLES
   background-color: white;
   color: #f27398;
   width: 12em; }
+.green-section a.download-button:hover, .yellow-section a.download-button:hover, .blue-section a.download-button:hover, .dark-grey-section a.download-button:hover {
+  background-color: white;
+  color: #f27398;
+  width: 14em; }
 .green-section p, .yellow-section p, .blue-section p, .dark-grey-section p {
   width: 66%; }
 
 .white-section {
   /*********************
   CASE STUDIES
-  *********************/
-  /*********************
-  SIDEBARS & ASIDES
-  *********************/
-  /* links widget */
-  /* meta widget */
-  /* pages widget */
-  /* recent-posts widget */
-  /* archives widget */
-  /* tag-cloud widget */
-  /* calendar widget */
-  /* category widget */
-  /* recent-comments widget */
-  /* search widget */
-  /* text widget */
-  /*********************
-  FOOTER STYLES
-  *********************/
-  /*
-  you'll probably need to do quite a bit
-  of overriding here if you styled them for
-  mobile. Make sure to double check these!
-  */
-  /* end .footer-links */ }
+  *********************/ }
   .white-section p {
     width: 66%; }
     .white-section p a {
@@ -358,30 +336,10 @@ POSTS & CONTENT STYLES
     background-color: white;
     color: #f27398;
     width: 12em; }
-  .white-section .sidebar {
-    margin-top: 2.2em; }
-  .white-section .widgettitle {
-    border-bottom: 2px solid #444;
-    margin-bottom: 0.75em; }
-  .white-section .widget {
-    padding: 0 10px;
-    margin: 2.2em 0; }
-    .white-section .widget ul li {
-      margin-bottom: 0.75em;
-      /* deep nesting */ }
-      .white-section .widget ul li ul {
-        margin-top: 0.75em;
-        padding-left: 1em; }
-  .white-section .footer-links ul li {
-    /*
-    be careful with the depth of your menus.
-    it's very rare to have multi-depth menus in
-    the footer.
-    */ }
 
 /******************************************************************
-Site Name: 
-Author: 
+Site Name: IanMarquette.com
+Author: Ian Marquette
 
 Stylesheet: Desktop Stylsheet
 
@@ -557,11 +515,14 @@ POSTS & CONTENT STYLES
 .project-001,
 .project-002,
 .project-003,
+.project-004,
 .dark-grey-section .sixcol,
 .white-section .sixcol,
 .case-study-001,
 .case-study-002,
-.case-study-003 {
+.case-study-003,
+.case-study-004,
+.case-study-005 {
   opacity: 0; }
 
 .white-section a.icon-instagram:hover,
@@ -840,8 +801,8 @@ ANIMATION
   animation-name: fadeInRight; }
 
 /******************************************************************
-Site Name: 
-Author: 
+Site Name: IanMarquette.com
+Author: Ian Marquette
 
 Stylesheet: Super Large Monitor Stylesheet
 

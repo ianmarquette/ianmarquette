@@ -104,6 +104,29 @@
 
 								</section><!-- end blue section -->	
 
+								<section class="green-section">
+
+									<div class="wrap sixcol">
+										<h3><?php the_field('project_004_title'); ?></h3>
+
+											<span class="project-004 animated" data-picture data-alt="<?php the_field('project_004_image_alt_tag'); ?>">
+        										<span data-src="<?php the_field('project_004_image_small'); ?>"></span>
+										        <span data-src="<?php the_field('project_004_image_small_retina'); ?>"      data-media="(min-device-pixel-ratio: 1.5)"></span>
+										        <span data-src="<?php the_field('project_004_image_medium'); ?>"        data-media="(min-width: 24em)"></span>
+										        <span data-src="<?php the_field('project_004_image_large'); ?>"     data-media="(min-width: 24em) and (min-device-pixel-ratio: 1.5)"></span>
+										        <span data-src="<?php the_field('project_004_image_large'); ?>"         data-media="(min-width: 38em)"></span> 
+
+        										<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+										        <noscript>
+										            <img src="<?php the_field('project_004_image_small'); ?>" alt="<?php the_field('project_004_image_alt_tag'); ?>">
+										        </noscript>
+    										</span>
+										<p class="project-excerpt"><?php the_field('project_004_excerpt'); ?></p>
+										<a class="project-button button" href="<?php the_field('project_004_link'); ?>">View Project</a>
+									</div>	
+
+								</section><!-- end green section -->
+
 								<section class="dark-grey-section home-dark-grey-block" id="about">
 
 									<div class="wrap sixcol animated">

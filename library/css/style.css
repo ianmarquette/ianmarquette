@@ -1,6 +1,6 @@
 /******************************************************************
-Site Name:
-Author:
+Site Name: IanMarquette.com
+Author: Ian Marquette
 
 Stylesheet: Main Stylesheet
 
@@ -469,8 +469,8 @@ dd {
   list-style: none; }
 
 /******************************************************************
-Site Name:
-Author:
+Site Name: IanMarquette.com
+Author: Ian Marquette
 
 Stylesheet: Mixins & Constants Stylesheet
 
@@ -629,8 +629,8 @@ you set a great foundation, you won't need to add too many styles in
 the other stylesheets. Remember, keep it light: Speed is Important.
 */
 /******************************************************************
-Site Name:
-Author:
+Site Name: IanMarquette.com
+Author: Ian Marquette
 
 Stylesheet: Base Mobile Stylesheet
 
@@ -726,45 +726,6 @@ body {
   font-size: 125%;
   line-height: 1.6; }
 
-/********************
-WORDPRESS BODY CLASSES
-style a page via class
-********************/
-/* for sites that are read right to left (i.e. hebrew) */
-/* home page */
-/* blog template page */
-/* archive page */
-/* date archive page */
-/* replace the number to the corresponding page number */
-/* search page */
-/* search result page */
-/* no results search page */
-/* individual paged search (i.e. body.search-paged-3) */
-/* 404 page */
-/* single post page */
-/* individual post page by id (i.e. body.postid-73) */
-/* individual paged single (i.e. body.single-paged-3) */
-/* attatchment page */
-/* individual attatchment page (i.e. body.attachmentid-763) */
-/* style mime type pages */
-/* author page */
-/* user nicename (i.e. body.author-samueladams) */
-/* paged author archives (i.e. body.author-paged-4) for page 4 */
-/* category page */
-/* individual category page (i.e. body.category-6) */
-/* replace the number to the corresponding page number */
-/* tag page */
-/* individual tag page (i.e. body.tag-news) */
-/* replace the number to the corresponding page number */
-/* custom page template page */
-/* individual page template (i.e. body.page-template-contact-php */
-/* replace the number to the corresponding page number */
-/* parent page template */
-/* child page template */
-/* replace the number to the corresponding page number */
-/* if user is logged in */
-/* paged items like search results or archives */
-/* individual paged (i.e. body.paged-3) */
 /*********************
 LAYOUT & GRID STYLES
 *********************/
@@ -976,9 +937,7 @@ ul.nav {
   margin: 0;
   padding: 0;
   width: 100%;
-  /* end .menu li */
-  /* highlight current page */
-  /* end current highlighters */ }
+  /* end .menu li */ }
   ul.nav li {
     display: inline-block;
     margin: 0;
@@ -1064,6 +1023,29 @@ a.project-button {
   -transition: all 0.2s linear;
   transition: all 0.2s linear; }
 
+a.download-button {
+  background-color: #f27398;
+  border-radius: 3px;
+  color: white;
+  display: inline-block;
+  font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 90%;
+  font-weight: bold;
+  letter-spacing: .15em;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: block;
+  margin: 1.8em auto;
+  padding: 1em 0.8em;
+  text-align: center;
+  width: 13em;
+  -webkit-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -transition: all 0.2s linear;
+  transition: all 0.2s linear; }
+
 p.project-excerpt {
   margin: 2.4em auto 1em;
   text-align: center;
@@ -1113,64 +1095,6 @@ p.project-excerpt {
   .white-section .mailto-link:hover {
     width: auto; }
 
-/* end .hentry */
-/* want to style individual post classes? Booya! */
-/* post by id (i.e. post-3) */
-/* general post style */
-/* general article on a page style */
-/* general style on an attatchment */
-/* sticky post style */
-/* hentry class */
-/* style by category (i.e. category-videos) */
-/* style by tag (i.e. tag-news) */
-/* post meta */
-.byline {
-  color: #999; }
-
-/* entry content */
-.entry-content {
-  /*
-  image alignment on a screen this size may be
-  a bit difficult. It's set to start aligning
-  and floating images at the next breakpoint,
-  but it's up to you. Feel free to change it up.
-  */ }
-  .entry-content dd {
-    margin-left: 0;
-    font-size: 0.9em;
-    color: #787878;
-    margin-bottom: 1.5em; }
-  .entry-content img {
-    margin: 0 0 1.5em 0;
-    max-width: 100%;
-    height: auto; }
-  .entry-content video, .entry-content object {
-    max-width: 100%;
-    height: auto; }
-  .entry-content pre {
-    background: #eee;
-    border: 1px solid #cecece;
-    padding: 10px; }
-
-/* end .entry-content */
-.wp-caption {
-  max-width: 100%;
-  background: #eee;
-  padding: 5px;
-  /* images inside wp-caption */ }
-  .wp-caption img {
-    max-width: 100%;
-    margin-bottom: 0;
-    width: 100%; }
-  .wp-caption p.wp-caption-text {
-    font-size: 0.85em;
-    margin: 4px 0 7px;
-    text-align: center; }
-
-/* end .wp-caption */
-/* image gallery styles */
-/* end .gallery */
-/* gallery caption styles */
 /*********************
 CASE STUDIES
 *********************/
@@ -1216,212 +1140,6 @@ figure.quote figcaption {
 .scroll-up-box {
   display: none; }
 
-/******************************************************************
-PAGE NAVI STYLES
-******************************************************************/
-.page-navigation,
-.wp-prev-next {
-  margin: 1.1em 0 2.2em; }
-
-.bones_page_navi {
-  /* current page link */
-  /* end .bones_page_navi .bpn-current */
-  /* common styles for page-navi links */
-  /* remove the bg on end links */
-  /* previous link */
-  /* next page link */
-  /* first page link */
-  /* last page link */ }
-  .bones_page_navi li {
-    float: left;
-    margin-left: 10px; }
-    .bones_page_navi li a {
-      padding: 3px 6px;
-      display: block;
-      text-decoration: none;
-      position: relative; }
-      .bones_page_navi li a:hover, .bones_page_navi li a:focus {
-        color: #f01d4f;
-        text-decoration: underline; }
-  .bones_page_navi li.bpn-current {
-    padding: 3px 6px;
-    border-bottom: 2px solid #f01d4f;
-    position: relative; }
-    .bones_page_navi li.bpn-current a {
-      /* hovering on current page link */ }
-  .bones_page_navi li.bpn-prev-link,
-  .bones_page_navi li.bpn-next-link {
-    font-weight: 700; }
-    .bones_page_navi li.bpn-prev-link a,
-    .bones_page_navi li.bpn-next-link a {
-      padding: 0; }
-  .bones_page_navi li.bpn-prev-link a:hover,
-  .bones_page_navi li.bpn-next-link a:hover,
-  .bones_page_navi li.bpn-first-page-link a:hover,
-  .bones_page_navi li.bpn-last-page-link a:hover {
-    background: none; }
-
-/* end .bones_page_navi */
-/* fallback previous & next links */
-.wp-prev-next .prev-link {
-  float: left; }
-.wp-prev-next .next-link {
-  float: right; }
-
-/* end .wp-prev-next */
-/******************************************************************
-COMMENT STYLES
-******************************************************************/
-/* h3 comment title */
-#comments {
-  /* number of comments span */ }
-
-.commentlist {
-  /* general comment classes */
-  /* vcard */
-  /* end .commentlist .vcard */
-  /* comment meta */
-  /* comment content */
-  /* end .commentlist .comment_content */
-  /* comment reply link */
-  /* end .commentlist .comment-reply-link */ }
-  .commentlist li {
-    position: relative;
-    clear: both;
-    overflow: hidden;
-    list-style-type: none;
-    margin-bottom: 1.5em;
-    padding: 0.7335em 10px;
-    /* end .commentlist li ul.children */ }
-    .commentlist li:last-child {
-      margin-bottom: 0; }
-    .commentlist li ul.children {
-      margin: 0;
-      /* variations */
-      /* change number for different depth */ }
-  .commentlist li[class*=depth-] {
-    margin-top: 1.1em; }
-  .commentlist li.depth-1 {
-    margin-left: 0;
-    margin-top: 0; }
-  .commentlist li:not(.depth-1) {
-    margin-right: -10px;
-    margin-left: -10px;
-    margin-top: 0;
-    padding-bottom: 0; }
-  .commentlist .odd {
-    background: #eee; }
-  .commentlist .even {
-    background: #fefefe; }
-  .commentlist .vcard {
-    margin-left: 50px; }
-    .commentlist .vcard cite.fn {
-      font-weight: 700;
-      font-style: normal; }
-    .commentlist .vcard time {
-      float: right; }
-      .commentlist .vcard time a {
-        color: #999;
-        text-decoration: none; }
-        .commentlist .vcard time a:hover {
-          text-decoration: underline; }
-    .commentlist .vcard img.avatar {
-      position: absolute;
-      left: 10px;
-      padding: 2px;
-      border: 1px solid #cecece;
-      background: #fff; }
-  .commentlist .comment_content {
-    margin-left: 50px; }
-    .commentlist .comment_content p {
-      margin: 0.7335em 0 1.5em;
-      font-size: 1em;
-      line-height: 1.5em; }
-  .commentlist .comment-reply-link {
-    text-decoration: none;
-    float: right;
-    background: #4598bb;
-    padding: 3px 5px;
-    color: #fff;
-    opacity: 0.65;
-    margin-bottom: 10px;
-    font-weight: 700;
-    font-size: 0.9em; }
-    .commentlist .comment-reply-link:hover, .commentlist .comment-reply-link:focus {
-      opacity: 1; }
-
-/* end .commentlist */
-/******************************************************************
-COMMENT FORM STYLES
-******************************************************************/
-.respond-form {
-  margin: 1.5em 10px;
-  padding-bottom: 2.2em; }
-  .respond-form form {
-    margin: 0.75em 0; }
-    .respond-form form li {
-      list-style-type: none;
-      clear: both;
-      margin-bottom: 0.7335em; }
-      .respond-form form li label,
-      .respond-form form li small {
-        display: none; }
-    .respond-form form input[type=text],
-    .respond-form form input[type=email],
-    .respond-form form input[type=url],
-    .respond-form form textarea {
-      padding: 3px 6px;
-      background: #efefef;
-      border: 2px solid #cecece;
-      line-height: 1.5em;
-      /* form validation */ }
-      .respond-form form input[type=text]:focus,
-      .respond-form form input[type=email]:focus,
-      .respond-form form input[type=url]:focus,
-      .respond-form form textarea:focus {
-        background: #fff; }
-      .respond-form form input[type=text]:invalid,
-      .respond-form form input[type=email]:invalid,
-      .respond-form form input[type=url]:invalid,
-      .respond-form form textarea:invalid {
-        outline: none;
-        border-color: #fbc2c4;
-        background-color: #f6e7eb;
-        -webkit-box-shadow: none;
-        -moz-box-shadow: none;
-        -ms-box-shadow: none;
-        box-shadow: none; }
-    .respond-form form input[type=text],
-    .respond-form form input[type=email],
-    .respond-form form input[type=url] {
-      max-width: 400px;
-      min-width: 250px; }
-    .respond-form form textarea {
-      resize: none;
-      width: 97.3%;
-      height: 150px; }
-
-/* comment submit button */
-/* comment form title */
-#comment-form-title {
-  margin: 0 0 1.1em; }
-
-/* cancel comment reply link */
-/* logged in comments */
-/* allowed tags */
-#allowed_tags {
-  margin: 1.5em 10px 0.7335em 0; }
-
-/* no comments */
-.nocomments {
-  margin: 0 20px 1.1em; }
-
-/*********************
-SIDEBARS & ASIDES
-*********************/
-.widget ul li {
-  /* deep nesting */ }
-
 /*********************
 FOOTER STYLES
 *********************/
@@ -1435,16 +1153,6 @@ FOOTER STYLES
     margin: 0 auto 1.6em; }
 
 /*
-if you checked out the link above:
-http://www.alistapart.com/articles/organizing-mobile/
-you'll want to style the footer nav
-a bit more in-depth. Remember to keep
-it simple because you'll have to
-override these styles for the desktop
-view.
-*/
-/* end .footer-links */
-/*
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
 larger than an iPhone but smaller than a tablet. Let's call them
@@ -1452,13 +1160,13 @@ tweeners.
 */
 @media only screen and (min-width: 24em) {
   /******************************************************************
-  Site Name: 
-  Author: 
+  Site Name: IanMarquette.com
+  Author: Ian Marquette
   
-  Stylesheet: 481px and Up Stylesheet
+  Stylesheet: 24em and Up Stylesheet
   
   This stylesheet is loaded for larger devices. It's set to 
-  481px because at 480px it would load on a landscaped iPhone.
+  24em because at 23em it would load on a landscaped iPhone.
   This isn't ideal because then you would be loading all those
   extra styles on that same mobile connection. 
   
@@ -1475,48 +1183,6 @@ tweeners.
     margin-top: 0.52em; }
 
   /*********************
-  NAVIGATION STYLES
-  *********************/
-  /* .menu is clearfixed inside mixins.scss */
-  .menu {
-    /* end .menu ul */ }
-    .menu ul {
-      /* end .menu ul li */
-      /* highlight current page */
-      /* end current highlighters */ }
-      .menu ul li {
-        /*
-        plan your menus and drop-downs wisely.
-        */ }
-        .menu ul li a {
-          /*
-          you can use hover styles here even though this size
-          has the possibility of being a mobile device.
-          */ }
-
-  /* end .menu */
-  /*********************
-  POSTS & CONTENT STYLES
-  *********************/
-  /* entry content */
-  .entry-content {
-    /* at this larger size, we can start to align images */ }
-    .entry-content .alignleft, .entry-content img.alignleft {
-      margin-right: 1.5em;
-      display: inline;
-      float: left; }
-    .entry-content .alignright, .entry-content img.alignright {
-      margin-left: 1.5em;
-      display: inline;
-      float: right; }
-    .entry-content .aligncenter, .entry-content img.aligncenter {
-      margin-right: auto;
-      margin-left: auto;
-      display: block;
-      clear: both; }
-
-  /* end .entry-content */
-  /*********************
   CASE STUDIES
   *********************/
   .case-study h1 {
@@ -1525,16 +1191,7 @@ tweeners.
   .scroll-up-box {
     display: block;
     height: 1.6em;
-    margin: 1em auto; }
-
-  /*********************
-  FOOTER STYLES
-  *********************/
-  /*
-  check your menus here. do they look good?
-  do they need tweaking?
-  */
-  /* end .footer-links */ }
+    margin: 1em auto; } }
 /*
 TABLET & SMALLER LAPTOPS
 This is the average viewing window. So Desktops, Laptops, and
@@ -1543,8 +1200,8 @@ you can add resource intensive styles.
 */
 @media only screen and (min-width: 38em) {
   /******************************************************************
-  Site Name:
-  Author:
+  Site Name: IanMarquette.com
+  Author: Ian Marquette
   
   Stylesheet: Grid Stylesheet
   
@@ -1598,8 +1255,8 @@ you can add resource intensive styles.
     float: right; }
 
   /******************************************************************
-  Site Name:
-  Author:
+  Site Name: IanMarquette.com
+  Author: Ian Marquette
   
   Stylesheet: Tablet & Small Desktop Stylesheet
   
@@ -1610,9 +1267,6 @@ you can add resource intensive styles.
   come into play. Have fun!
   
   ******************************************************************/
-  /*********************
-  GENERAL STYLES
-  *********************/
   /******************************************************************
   H1, H2, H3, H4, H5 STYLES
   ******************************************************************/
@@ -1659,36 +1313,17 @@ you can add resource intensive styles.
     background-color: white;
     color: #f27398;
     width: 12em; }
+  .green-section a.download-button:hover, .yellow-section a.download-button:hover, .blue-section a.download-button:hover, .dark-grey-section a.download-button:hover {
+    background-color: white;
+    color: #f27398;
+    width: 14em; }
   .green-section p, .yellow-section p, .blue-section p, .dark-grey-section p {
     width: 66%; }
 
   .white-section {
     /*********************
     CASE STUDIES
-    *********************/
-    /*********************
-    SIDEBARS & ASIDES
-    *********************/
-    /* links widget */
-    /* meta widget */
-    /* pages widget */
-    /* recent-posts widget */
-    /* archives widget */
-    /* tag-cloud widget */
-    /* calendar widget */
-    /* category widget */
-    /* recent-comments widget */
-    /* search widget */
-    /* text widget */
-    /*********************
-    FOOTER STYLES
-    *********************/
-    /*
-    you'll probably need to do quite a bit
-    of overriding here if you styled them for
-    mobile. Make sure to double check these!
-    */
-    /* end .footer-links */ }
+    *********************/ }
     .white-section p {
       width: 66%; }
       .white-section p a {
@@ -1728,27 +1363,7 @@ you can add resource intensive styles.
     .white-section a.scroll-up:hover {
       background-color: white;
       color: #f27398;
-      width: 12em; }
-    .white-section .sidebar {
-      margin-top: 2.2em; }
-    .white-section .widgettitle {
-      border-bottom: 2px solid #444;
-      margin-bottom: 0.75em; }
-    .white-section .widget {
-      padding: 0 10px;
-      margin: 2.2em 0; }
-      .white-section .widget ul li {
-        margin-bottom: 0.75em;
-        /* deep nesting */ }
-        .white-section .widget ul li ul {
-          margin-top: 0.75em;
-          padding-left: 1em; }
-    .white-section .footer-links ul li {
-      /*
-      be careful with the depth of your menus.
-      it's very rare to have multi-depth menus in
-      the footer.
-      */ } }
+      width: 12em; } }
 /*
 DESKTOP
 This is the average viewing window. So Desktops, Laptops, and
@@ -1757,8 +1372,8 @@ you can add resource intensive styles.
 */
 @media only screen and (min-width: 51em) {
   /******************************************************************
-  Site Name: 
-  Author: 
+  Site Name: IanMarquette.com
+  Author: Ian Marquette
   
   Stylesheet: Desktop Stylsheet
   
@@ -1934,11 +1549,14 @@ you can add resource intensive styles.
   .project-001,
   .project-002,
   .project-003,
+  .project-004,
   .dark-grey-section .sixcol,
   .white-section .sixcol,
   .case-study-001,
   .case-study-002,
-  .case-study-003 {
+  .case-study-003,
+  .case-study-004,
+  .case-study-005 {
     opacity: 0; }
 
   .white-section a.icon-instagram:hover,
@@ -2221,8 +1839,8 @@ This is for the larger monitors and possibly full screen viewers.
 */
 @media only screen and (min-width: 1240px) {
   /******************************************************************
-  Site Name: 
-  Author: 
+  Site Name: IanMarquette.com
+  Author: Ian Marquette
   
   Stylesheet: Super Large Monitor Stylesheet
   
@@ -2246,8 +1864,8 @@ query for retina AND a certain size if you want. Go Nuts.
 */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   /******************************************************************
-  Site Name: 
-  Author: 
+  Site Name: IanMarquette.com
+  Author: Ian Marquette
   
   Stylesheet: Retina Screens & Devices Stylesheet
   
@@ -2287,9 +1905,7 @@ query for retina AND a certain size if you want. Go Nuts.
   */
   /*********************
   POSTS & CONTENT STYLES
-  *********************/
-  .header-image {
-    background: url(../images/ian-marquette-photo@2x.jpg); } }
+  *********************/ }
 /*
 iPHONE 5 MEDIA QUERY
 Want to get fancy for no good reason? Knock yourself out.
@@ -2302,8 +1918,8 @@ be set to display none.
 */
 @media print {
   /******************************************************************
-  Site Name:
-  Author:
+  Site Name: IanMarquette.com
+  Author: Ian Marquette
   
   Stylesheet: Print Stylesheet
   

@@ -19,7 +19,7 @@
 
 	</body>
 
-	<script src="<?php echo get_template_directory_uri(); ?>/library/headsupgrid/jquery-1.6.2.min.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/library/js/jquery-1.6.2.min.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/library/js/waypoints.min.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/library/js/matchmedia.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/library/js/picturefill.js"></script>
@@ -132,7 +132,7 @@
 	      // Add persistent header class to header when header image gets to top of screen
 	        $(document).ready(function() {
 
-	            $(".header-image").waypoint(function() {
+	            $("h1").waypoint(function() {
 	                $("#inner-header").toggleClass("persistent-header");               
 	            });
 	        });
@@ -156,6 +156,13 @@
 
 	            $(".project-003").waypoint(function() {
 	                $(".project-003").addClass("fadeInRight");               
+	            }, { offset: '80%' });
+	        }); 
+
+	        $(document).ready(function() {
+
+	            $(".project-004").waypoint(function() {
+	                $(".project-004").addClass("fadeInLeft");               
 	            }, { offset: '80%' });
 	        }); 
 
@@ -191,6 +198,20 @@
 
 	            $(".case-study-003").waypoint(function() {
 	                $(".case-study-003").addClass("fadeInRight");               
+	            }, { offset: '80%' });
+	        }); 
+
+	         $(document).ready(function() {
+
+	            $(".case-study-004").waypoint(function() {
+	                $(".case-study-004").addClass("fadeInLeft");               
+	            }, { offset: '80%' });
+	        }); 
+
+	          $(document).ready(function() {
+
+	            $(".case-study-005").waypoint(function() {
+	                $(".case-study-005").addClass("fadeInRight");               
 	            }, { offset: '80%' });
 	        }); 
 
